@@ -10,7 +10,7 @@ import com.Vitiger.ObjectRepository.CreateCampaignsPage;
 import com.Vitiger.ObjectRepository.CreatingNewCampaignPage;
 import com.Vitiger.ObjectRepository.CreatingNewProductPage;
 import com.Vitiger.ObjectRepository.ProductSearchPage;
-
+//Campaign with product
 public class CreateCampanignwithProduct extends BaseClass {
 
 	@Test
