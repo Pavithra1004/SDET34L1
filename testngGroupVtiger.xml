@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="baseclass"/>
+<include name="regression"/>
+<include name="sanity"/>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.Product.Vtiger.CreateProductTest"/>
+      <class name="com.CampaignsTest.CreateCampanignwithProduct"/>
+      <class name="com.DocumentsTest.CreateDocumentTest"/>
+      <class name="com.OrganizationTest.CreateOrganizationTest"/>
+      <class name="com.vtiger.CreateContactTest.CreateContactTest"/>
+      <class name="com.CampaignsTest.CreateCompaignTest"/>
+      <class name="com.OrganizationTest.OrganixzationIndustry"/>
+      <class name="com.vtiger.CreateContactTest.CreateContactWithOrganization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
