@@ -14,7 +14,7 @@ import com.Sdet32l1.GenricScript.IConstantsPath;
 import com.Sdet32l1.GenricScript.JavaMethods;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+// craete cantact properties
 public class CreateContactProperties {
 public static void main(String[] args) throws IOException {
 	//JavaMethods jm=new JavaMethods();
