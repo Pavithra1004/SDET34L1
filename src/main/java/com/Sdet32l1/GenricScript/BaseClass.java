@@ -73,7 +73,6 @@ public class BaseClass {
 
 		randNumber=javaMethods.getRandomNumber(1000);
 
-
 		switch (browser) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
