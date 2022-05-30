@@ -19,6 +19,17 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.OrganizationTest.CreateOrganizationTest -->
+      <class name="com.CampaignsTest.CreateCompaignTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="createCompaignTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.CampaignsTest.CreateCompaignTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

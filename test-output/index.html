@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,24 +93,10 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  4 skipped,  1 passed</span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.OrganizationTest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="method-list-title skipped">Skipped methods</span>
                     <span class="show-or-hide-methods skipped">
                       <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
                       <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
@@ -118,17 +104,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.OrganizationTest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.OrganizationTest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.OrganizationTest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.CampaignsTest.CreateCompaignTest" class="method navigator-link" hash-for-method="createCompaignTest">createCompaignTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,20 +113,6 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.CampaignsTest.CreateCompaignTest" class="method navigator-link" hash-for-method="createCompaignTest">createCompaignTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -162,26 +124,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.OrganizationTest.CreateOrganizationTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.CampaignsTest.CreateCompaignTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createOrganizationTest">
-                  </a> <!-- createOrganizationTest -->
-                  <span class="method-name">createOrganizationTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at com.OrganizationTest.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:25)
+                  <a name="createCompaignTest">
+                  </a> <!-- createCompaignTest -->
+                  <span class="method-name">createCompaignTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.hashCode()&quot; because &quot;this.browser&quot; is null
+	at com.Sdet32l1.GenricScript.BaseClass.beforeClass(BaseClass.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -193,66 +155,15 @@
                   <a name="createOrganizationTest">
                   </a> <!-- createOrganizationTest -->
                   <span class="method-name">createOrganizationTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at com.OrganizationTest.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:25)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.hashCode()&quot; because &quot;this.browser&quot; is null
+	at com.Sdet32l1.GenricScript.BaseClass.beforeClass(BaseClass.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrganizationTest">
-                  </a> <!-- createOrganizationTest -->
-                  <span class="method-name">createOrganizationTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at com.OrganizationTest.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrganizationTest">
-                  </a> <!-- createOrganizationTest -->
-                  <span class="method-name">createOrganizationTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at com.OrganizationTest.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrganizationTest">
-                  </a> <!-- createOrganizationTest -->
-                  <span class="method-name">createOrganizationTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at com.OrganizationTest.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.CampaignsTest.CreateCompaignTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createCompaignTest">
-                  </a> <!-- createCompaignTest -->
-                  <span class="method-name">createCompaignTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -323,36 +234,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createCompaignTest')
-data.setCell(0, 2, 'com.CampaignsTest.CreateCompaignTest')
-data.setCell(0, 3, 20062);
+data.setCell(0, 1, 'createOrganizationTest')
+data.setCell(0, 2, 'com.OrganizationTest.CreateOrganizationTest')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createOrganizationTest')
-data.setCell(1, 2, 'com.OrganizationTest.CreateOrganizationTest')
-data.setCell(1, 3, 11120);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createOrganizationTest')
-data.setCell(2, 2, 'com.OrganizationTest.CreateOrganizationTest')
-data.setCell(2, 3, 10325);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createOrganizationTest')
-data.setCell(3, 2, 'com.OrganizationTest.CreateOrganizationTest')
-data.setCell(3, 3, 9630);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createOrganizationTest')
-data.setCell(4, 2, 'com.OrganizationTest.CreateOrganizationTest')
-data.setCell(4, 3, 9596);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createOrganizationTest')
-data.setCell(5, 2, 'com.OrganizationTest.CreateOrganizationTest')
-data.setCell(5, 3, 8441);
+data.setCell(1, 1, 'createCompaignTest')
+data.setCell(1, 2, 'com.CampaignsTest.CreateCompaignTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -363,14 +258,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createCompaignTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Campaigns  Created successfully</span>
-                <span class="reporter-method-output">TC pass</span>
-                <span class="reporter-method-output">Actual result is--->[ CAM92 ] TSS_664 - Campaign Information Expected Result is--->TSS_664</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -401,104 +288,58 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">2076 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">926 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">11354 ms</span>
+                <span class="method-start">1486 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">16853 ms</span>
+                <span class="method-start">1498 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">27256 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">29783 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">33301 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">42950 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">44684 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">48203 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">56667 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">58672 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">61977 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">71645 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">73731 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">77380 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">88842 ms</span>
+                <span class="method-start">1522 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">92813 ms</span>
+                <span class="method-start">1528 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.CampaignsTest.CreateCompaignTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">93428 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">1531 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">103650 ms</span>
+                <span class="method-start">1583 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createCompaignTest</span>
-                <span class="method-start">107519 ms</span>
+                <span class="method-start">1602 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">127586 ms</span>
+                <span class="method-start">1622 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">129952 ms</span>
+                <span class="method-start">1628 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.OrganizationTest.CreateOrganizationTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">131859 ms</span>
+                <span class="method-start">2122 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
