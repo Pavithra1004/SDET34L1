@@ -59,16 +59,16 @@ public class BaseClass {
 	{
 		javaMethods=new JavaMethods();
 
-		//String	url=FileMethods.getDataFromPropertyFile("url");
-		//String userName=FileMethods.getDataFromPropertyFile("un");
-		//String password=FileMethods.getDataFromPropertyFile("pwd");
-		//String browser=FileMethods.getDataFromPropertyFile("browser");
+		url=FileMethods.getDataFromPropertyFile("url");
+		 userName=FileMethods.getDataFromPropertyFile("un");
+		 password=FileMethods.getDataFromPropertyFile("pwd");
+		 browser=FileMethods.getDataFromPropertyFile("browser");
 		
-		String URL=System.getProperty("URL");
-		String UN=System.getProperty("UN");
-		String PWD=System.getProperty("PWD");
-		String BROWSER=System.getProperty("BROWSER");
-		
+//		String URL=System.getProperty("URL");
+//		String UN=System.getProperty("UN");
+//		String PWD=System.getProperty("PWD");
+//		String BROWSER=System.getProperty("BROWSER");
+//		
 		timeout=FileMethods.getDataFromPropertyFile("timeout");
 
 		randNumber=javaMethods.getRandomNumber(1000);
