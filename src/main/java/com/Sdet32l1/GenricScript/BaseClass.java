@@ -64,7 +64,7 @@ public class BaseClass {
 		userName=FileMethods.getDataFromPropertyFile("un");
 		password=FileMethods.getDataFromPropertyFile("pwd");
 		browser=FileMethods.getDataFromPropertyFile("browser");
-
+//from property file
 		
 		//		String URL=System.getProperty("URL");
 		//		String UN=System.getProperty("UN");
