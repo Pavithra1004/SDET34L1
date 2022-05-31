@@ -58,12 +58,13 @@ public class BaseClass {
 	public void beforeClass(/*String browser*/) throws IOException
 	{
 		javaMethods=new JavaMethods();
-
+//this is required
 		url=FileMethods.getDataFromPropertyFile("url");
 		userName=FileMethods.getDataFromPropertyFile("un");
 		password=FileMethods.getDataFromPropertyFile("pwd");
 		browser=FileMethods.getDataFromPropertyFile("browser");
 
+		
 		//		String URL=System.getProperty("URL");
 		//		String UN=System.getProperty("UN");
 		//		String PWD=System.getProperty("PWD");
