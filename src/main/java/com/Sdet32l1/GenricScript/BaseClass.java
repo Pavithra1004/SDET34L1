@@ -24,8 +24,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * @author anand
  *
  */
+//baseclass
 public class BaseClass {
-//This is global variables
+
 	public String url;
 	public String userName;
 	public String password;
@@ -63,7 +64,7 @@ public class BaseClass {
 		userName=FileMethods.getDataFromPropertyFile("un");
 		password=FileMethods.getDataFromPropertyFile("pwd");
 		browser=FileMethods.getDataFromPropertyFile("browser");
-
+//from property file
 		
 		//		String URL=System.getProperty("URL");
 		//		String UN=System.getProperty("UN");
