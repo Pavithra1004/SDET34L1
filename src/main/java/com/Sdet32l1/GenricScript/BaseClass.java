@@ -24,8 +24,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * @author anand
  *
  */
+//baseclass
 public class BaseClass {
-//This is global variables
+
 	public String url;
 	public String userName;
 	public String password;
