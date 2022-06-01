@@ -72,7 +72,6 @@ public class BaseClass {
 		//		String BROWSER=System.getProperty("BROWSER");
 		//		
 		timeout=FileMethods.getDataFromPropertyFile("timeout");
-
 		randNumber=javaMethods.getRandomNumber(1000);
 
 		switch (browser) {
